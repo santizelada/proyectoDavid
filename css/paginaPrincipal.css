@@ -4,7 +4,8 @@
 }
 
 body{
-    background-color: black;
+    background: green
+    
 }
 
 section{
@@ -17,32 +18,65 @@ footer img{
 }
 
 footer{
-    width: 100vw;
+    width: 45w;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: space-around;
+    padding-bottom: 2%;
+    background-color: black;
+
 }
 
 footer .footerImageContainer{
     text-align: center;
+    width: 100vw !important;
+    height:auto;
+    max-width:100%;
+    max-height: fit-content !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 4.6%;
+    padding-left: 5%;
 }
 
 .footerInfoContainer{
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;
+    font-size: 2rem;    
+    position: relative;
+   
 }
 
 .footerEtiquetasA a{
     text-decoration: none;
+    font-size: 1.2vw;
+    text-align: center;
+    color: white;
+    width: fit-content;
 }
 
 .containerLogos{
     color: white;
+    align-items: center;
+
 }
+
+.containerLogos i {
+    font-size: 1.5vw; 
+}
+
 
 .footerMail{
     color: white;
+    align-items: center;
+}
+
+.footerMail i {
+    font-size: 1.5vw; 
 }
