@@ -79,3 +79,31 @@ footer .footerImageContainer{
 .footerMail i {
     font-size: 1.5vw; 
 }
+
+.crouselItem{
+    width: 50%;
+}
+
+.contenedorLogoNavbar{
+    background-color: black;
+    border-radius: 50%;
+    width: 4%;
+}
+
+.navbarContainer1{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer2{
+    background-color: black;
+
+}
+
+
+
+.contenedorLogoNavbar img{
+    width: 100%;
+    height: auto;
+}
