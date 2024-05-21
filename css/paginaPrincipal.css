@@ -1,15 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .navbar{
     background-color: black;
     color: white;
 }
 
 body{
-    background: green;
+   background-color: black; 
 }
 
 section{
-    height: 100vh;
+    height: 130vh;
 }
+
+.main_img {
+    position: absolute;
+    z-index: 3;
+    width: auto;
+    height: 100%;
+    float: left;
+    
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.guitarras {
+    overflow: hidden;
+    padding: 30px 0  0;
+    background-color: black;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slider {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    animation: 40s slide infinite linear;
+    
+}
+
+.slider img {
+    height: 45vh;
+    width: 15vw;
+    margin: 0 6.8%;
+}
+
+.cont_p {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+    margin: 0 right;
+    margin-top: 20vh;
+}
+
+section p {
+    color: white;
+}
+
 
 footer img{
     height: 10%;
