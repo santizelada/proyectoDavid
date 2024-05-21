@@ -1,3 +1,48 @@
-body{ 
-    color: red
+.navbar{
+    background-color: black;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+section{
+    height: 100vh;
+}
+
+footer img{
+    height: 10%;
+    width: 10%;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footerImageContainer{
+    text-align: center;
+}
+
+.footerInfoContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.footerEtiquetasA a{
+    text-decoration: none;
+}
+
+.containerLogos{
+    color: white;
+}
+
+.footerMail{
+    color: white;
 }
