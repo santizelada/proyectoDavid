@@ -12,20 +12,25 @@
 }
 
 body{
-   background-color: black; 
+   background-color: darkgray; 
+   background-image: url("../img/background_paginaPrincip.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
 }
 
-section{
-    height: 130vh;
+.main_section{
+    height: 100vh;
 }
 
 .main_img {
     position: absolute;
     z-index: 3;
     width: auto;
-    height: 100%;
-    float: left;
-    
+    height: 90vh;
+    margin-left: -260px; 
+    float: inline-start;
 }
 
 @keyframes slide {
@@ -40,8 +45,7 @@ section{
 
 .guitarras {
     overflow: hidden;
-    padding: 30px 0  0;
-    background-color: black;
+    padding: 30px 0  15vh;
     white-space: nowrap;
     position: relative;
 }
@@ -55,28 +59,39 @@ section{
 }
 
 .slider img {
-    height: 45vh;
+    height: 35vh;
     width: 15vw;
-    margin: 0 6.8%;
+    margin: 0 7%;
 }
 
 .cont_p {
     display: flex;
     justify-content: center;
-    width: 70%;
+    align-items: center;
+    width: 60%;
     height: fit-content;
-    margin: 0 right;
-    margin-top: 20vh;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .cont_p {
+        width: 90%;
+        margin-top: 10vh;
+    }
 }
 
 section p {
     color: white;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
 }
 
 
 footer img{
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 8%;
 }
 
 footer{
@@ -118,9 +133,12 @@ footer .footerImageContainer{
 .footerEtiquetasA a{
     text-decoration: none;
     font-size: 1.2vw;
-    text-align: center;
     color: white;
     width: fit-content;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
 }
 
 .containerLogos{
@@ -163,8 +181,6 @@ footer .footerImageContainer{
     background-color: black;
 
 }
-
-
 
 .contenedorLogoNavbar img{
     width: 100%;
