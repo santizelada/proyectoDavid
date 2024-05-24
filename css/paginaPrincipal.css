@@ -60,8 +60,8 @@ body{
 
 .slider img {
     height: 35vh;
-    width: 15vw;
-    margin: 0 7%;
+    width: 20vw;
+    margin: 0 8%;
 }
 
 .cont_p {
@@ -86,6 +86,7 @@ section p {
     letter-spacing: 1.8px;
     line-height: 2.8vh;
     vertical-align: middle;
+    font-size: 1.5vw;
 }
 
 
@@ -159,6 +160,15 @@ footer .footerImageContainer{
 
 .footerMail i {
     font-size: 1.5vw; 
+}
+
+@media screen and (max-width:800px) {
+    .footerFatherContainer .grupo {
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    } 
 }
 
 .crouselItem{
