@@ -1,4 +1,14 @@
-/* .navbarContainer{
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/*
+.navbar{ .navbarContainer{
     display: flex;
     background-color: black;
     padding: 1%;
@@ -95,17 +105,87 @@ form .inputSearchNavbar{
 }
 
 body{
-    background: green
-    
+   background-color: darkgray; 
+   background-image: url("../img/background_paginaPrincip.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
 }
 
-section{
+.main_section{
     height: 100vh;
 }
 
+.main_img {
+    position: absolute;
+    z-index: 3;
+    width: auto;
+    height: 90vh;
+    margin-left: -260px; 
+    float: inline-start;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.guitarras {
+    overflow: hidden;
+    padding: 30px 0  15vh;
+    white-space: nowrap;
+    position: relative;
+}
+
+.slider {
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    animation: 40s slide infinite linear;
+    
+}
+
+.slider img {
+    height: 35vh;
+    width: 20vw;
+    margin: 0 8%;
+}
+
+.cont_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .cont_p {
+        width: 90%;
+        margin-top: 10vh;
+    }
+}
+
+section p {
+    color: white;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
+    font-size: 1.5vw;
+}
+
+
 footer img{
-    height: 10%;
-    width: 10%;
+    height: 8%;
+    width: 8%;
 }
 
 footer{
@@ -147,9 +227,12 @@ footer .footerImageContainer{
 .footerEtiquetasA a{
     text-decoration: none;
     font-size: 1.2vw;
-    text-align: center;
     color: white;
     width: fit-content;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
 }
 
 .containerLogos{
@@ -170,4 +253,39 @@ footer .footerImageContainer{
 
 .footerMail i {
     font-size: 1.5vw; 
+}
+
+@media screen and (max-width:800px) {
+    .footerFatherContainer .grupo {
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    } 
+}
+
+.crouselItem{
+    width: 50%;
+}
+
+.contenedorLogoNavbar{
+    background-color: black;
+    border-radius: 50%;
+    width: 4%;
+}
+
+.navbarContainer1{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer2{
+    background-color: black;
+
+}
+
+.contenedorLogoNavbar img{
+    width: 100%;
+    height: auto;
 }
