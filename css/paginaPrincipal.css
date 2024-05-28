@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
-*{
+* {
     font-family: "Titillium Web", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -8,119 +8,132 @@
 
 html {
     height: 100%;
+    overflow-x: hidden;
+
 }
 
-/*
-.navbar{ .navbarContainer{
-    display: flex;
-    background-color: black;
-    padding: 1%;
-}
-
-.navbarImageContainer{
-    width: 10%;
-}
-
-.navbarContainer li a{
+.navbarContenedorAbajo {
+    padding: 0;
     color: white;
-    text-decoration: none;
-    padding: 0 5px;
+    background-color: rgb(7, 96, 108);
 }
 
-
-.navbarImageContainer img{
-    height: auto;
-    width: 100%;
-}
-
-
-.searchBarContainer{
-    display: flex;
-    align-items: center;
-}
-
-.inputSearchNavbar{
-    background-color: black;
-}
-
-.logosContainer{
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    color: white;
-}
- */
-
-
-.navbarBootstrap{
-    background-color: black;
-    padding: 4% 0;
+.navbarContenedorArriba {
+    background-color: rgb(27, 27, 27);
+    padding: 0;
+    margin: 0;
     height: 10vh;
+
+    /* background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+}
+
+.navbarContenedorArriba a {
     color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: 1s;
 }
 
-.logoNavbar{
-    height: auto;
-    width: 8vw;
-    margin-top: 2%;
-    margin-left: 2%;
+.navbarContenedorArriba a:hover {
+    color: rgb(138, 76, 76);
 }
 
-.navbarBootstrap ul{
-    width: 50%;
+.contenedorDivImagenNavbar {
+    width: 25%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 5%;
+    justify-content: center;
 }
 
-.buttonNavbarLeft{
+.logoNavbar {
+    height: auto;
+    width: 6vw;
+    margin: 5px;
+}
+
+.contenedorLinksNavbar {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorInfoNavbar {
+    height: 10vh;
+
+}
+
+.buttonNavbarLeft {
     color: white;
     font-size: 2rem;
 }
 
-form{
+form {
     width: 30%;
 }
 
-form .inputSearchNavbar{
+form .inputSearchNavbar {
     height: 40px;
     margin-top: 2%;
+    background-color: rgb(36, 36, 36);
+
 }
 
-.navbarBootstrap a{
-    color: white;
-    text-transform: uppercase;
-    margin: 0 1%;
-    font-size: 1.3rem;
-    font-weight: 100;
-}
-
-.inputSearchNavbar{
+.inputSearchNavbar {
     background-color: black;
     border-color: white;
     border-radius: 2cm;
 }
 
-.formNavbar{
+.formNavbar {
     margin-right: 5%;
 }
 
-body{
-   background-color: green; 
-   background-image: url("../img/background_paginaPrincip.png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   box-sizing: inherit;
-   padding-bottom: 3em;
-   min-height: 100vh;
+/* HOLA DAVID JARDINEROOOO NO BORRES ESTO. 
+
+EL QUE BORRE ESTO ES JARDINERO Y SE SIENTA AHÍ. NO BORRAR. 
+
+.contenedorLogoNavbar{
+    background-color: black;
+    border-radius: 50%;
+    width: 4%;
 }
 
-.main_section{
+.navbarContainer1{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer2{
+background-color: black;
+
+}
+
+.contenedorLogoNavbar img{
+    width: 100%;
+    height: auto;
+} */
+
+
+body {
+    background-color: green;
+    background-image: url("../img/background_paginaPrincip.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: inherit;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+.main_section {
     height: 90vh;
+
 }
 
 .main_img {
@@ -128,7 +141,7 @@ body{
     z-index: 3;
     width: auto;
     height: 90vh;
-    margin-left: -260px; 
+    margin-left: -260px;
     float: inline-start;
 }
 
@@ -136,6 +149,7 @@ body{
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -144,7 +158,7 @@ body{
 
 .guitarras {
     overflow: hidden;
-    padding: 30px 0  15vh;
+    padding: 30px 0 15vh;
     white-space: nowrap;
     position: relative;
 }
@@ -154,7 +168,7 @@ body{
     display: flex;
     justify-content: space-between;
     animation: 40s slide infinite linear;
-    
+
 }
 
 .slider img {
@@ -181,7 +195,93 @@ section p {
     font-size: 1.8vh;
 }
 
-@media (max-width: 768px) { 
+footer {
+    width: 45w;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    background: black;
+    position: absolute;
+    padding: 1em 0;
+}
+
+footer img {
+    height: 8%;
+    width: 8%;
+}
+
+footer .footerImageContainer {
+    text-align: center;
+    width: 100vw !important;
+    height: auto;
+    max-width: 100%;
+    max-height: fit-content !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    /*padding-bottom: 4.6%;*/
+    padding-left: 5%;
+}
+
+.footerInfoContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    position: relative;
+}
+
+.footerEtiquetasA a {
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: white;
+    width: fit-content;
+    text-align: justify;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
+}
+
+.containerLogos {
+    color: white;
+    align-items: center;
+
+}
+
+.containerLogos i {
+    font-size: 1.5vw;
+}
+
+
+.footerMail {
+    color: white;
+    align-items: center;
+}
+
+.footerMail i {
+    font-size: 1.5vw;
+}
+
+/* PANTALLAS MEDIANAS ----------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .navbarContenedorAbajo {
+        padding: 0;
+        color: white;
+        background-color: rgb(125, 0, 27);
+    }
+
+    .contenedorLinksNavbar {
+        background-color: red;
+    }
+
+}
+
+@media (max-width: 768px) {
     .cont_p {
         width: 90%;
         margin-top: 8vh;
@@ -213,86 +313,13 @@ section p {
     .main_img {
         height: 42%;
         width: 63%;
-        margin-left: -125px; 
+        margin-left: -125px;
     }
 
-    .main_section{
+    .main_section {
         height: 85vh;
     }
-}
 
-footer{
-    width: 45w;
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-around;
-    background: black;
-    position: absolute;
-    padding: 1em 0;
-}
-
-footer img{
-    height: 8%;
-    width: 8%;
-}
-
-footer .footerImageContainer{
-    text-align: center;
-    width: 100vw !important;
-    height:auto;
-    max-width:100%;
-    max-height: fit-content !important;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-    /*padding-bottom: 4.6%;*/
-    padding-left: 5%;
-}
-
-.footerInfoContainer{
-    width: 100vw;
-    display: flex;
-    justify-content: space-around;
-    font-size: 2rem;    
-    position: relative;
-}
-
-.footerEtiquetasA a{
-    text-decoration: none;
-    font-size: 1.2vw;
-    color: white;
-    width: fit-content;
-    text-align: justify;
-    letter-spacing: 1.8px;
-    line-height: 2.8vh;
-    vertical-align: middle;
-}
-
-.containerLogos{
-    color: white;
-    align-items: center;
-
-}
-
-.containerLogos i {
-    font-size: 1.5vw; 
-}
-
-
-.footerMail{
-    color: white;
-    align-items: center;
-}
-
-.footerMail i {
-    font-size: 1.5vw; 
-}
-
-@media (max-width: 768px) {
     footer {
         height: 12vh;
     }
@@ -314,7 +341,7 @@ footer .footerImageContainer{
         font-size: 2vh;
     }
 
-    .footerEtiquetasA a{
+    .footerEtiquetasA a {
         font-size: 2.5vw;
         margin: 0;
     }
@@ -329,27 +356,4 @@ footer .footerImageContainer{
         width: 12vw;
     }
 
-  }
-
-
-.contenedorLogoNavbar{
-    background-color: black;
-    border-radius: 50%;
-    width: 4%;
-}
-
-.navbarContainer1{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.navbarContainer2{
-   background-color: black;
-
-}
-
-.contenedorLogoNavbar img{
-    width: 100%;
-    height: auto;
 }
