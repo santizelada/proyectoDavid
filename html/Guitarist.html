@@ -13,16 +13,18 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary navbarBootstrap">
-        <div class="container-fluid navbarBootstrap">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbarContenedorAbajo">
+        <div class="container-fluid navbarContenedorArriba">
+            <div class="contenedorDivImagenNavbar">
             <img src="../img/logoGibson.png" alt="logo de Gibson" class="logoNavbar"> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            </div>
+            <button class="navbar-toggler menuHamburguesaButton" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse contenedorInfoNavbar" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 contenedorLinksNavbar">
                     <li class="nav-item">
                         <a class="nav-link" href="#">electric</a>
                     </li>
@@ -44,9 +46,9 @@
 
                 </ul>
                 <form class="d-flex formNavbar" role="search">
-                    <input class="form-control me-2 inputSearchNavbar" type="search" placeholder="" aria-label="Search">
-                    <button class="btn" type="submit"><i class="bi bi-person buttonNavbarLeft"></i> </button>
-                    <button class="btn" type="submit"><i class="bi bi-cart buttonNavbarLeft"></i></button>
+                    <input class="form-control me-2 inputSearchNavbar" type="search" aria-label="Search">
+                    <button class="btn" type="submit"><i class="bi bi-person buttonNavbarRight"></i> </button>
+                    <button class="btn" type="submit"><i class="bi bi-cart buttonNavbarRight"></i></button>
 
                 </form>
             </div>
@@ -61,31 +63,31 @@
         <section>
             <div class="guitarrist">
                 <div class="slash">
-                    <h1>SLASH</h1>
+                    <h1 class="slash_h1" >SLASH</h1>
                     <img src="../img/SLASH1.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure sint eaque ipsam facilis, unde laboriosam quasi eius qui asperiores aliquam quaerat nihil modi numquam voluptatum voluptas dignissimos sunt hic?</p>
                 </div>
     
                 <div class="angus">
-                    <h1>ANGUS YOUNG</h1>
+                    <h1 class="angus_h1" >ANGUS YOUNG</h1>
                     <img src="../img/ANGUS.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure sint eaque ipsam facilis, unde laboriosam quasi eius qui asperiores aliquam quaerat nihil modi numquam voluptatum voluptas dignissimos sunt hic?</p>
                 </div>
     
                 <div class="eric">
-                    <h1>ERIC CLAPTON</h1>
+                    <h1 class="eric_h1" >ERIC CLAPTON</h1>
                     <img src="../img/ERICLAPTON.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure sint eaque ipsam facilis, unde laboriosam quasi eius qui asperiores aliquam quaerat nihil modi numquam voluptatum voluptas dignissimos sunt hic?</p>
                 </div>
     
                 <div class="jimmy">
-                    <h1>JIMMY PAGE</h1>
+                    <h1 class="angus_h1" >JIMMY PAGE</h1>
                     <img src="../img/JIMMY2.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure sint eaque ipsam facilis, unde laboriosam quasi eius qui asperiores aliquam quaerat nihil modi numquam voluptatum voluptas dignissimos sunt hic?</p>
                 </div>
     
                 <div class="bbking">
-                    <h1>B.B KING</h1>
+                    <h1 class="bb_h1" >B.B KING</h1>
                     <img src="../img/BBKING.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure sint eaque ipsam facilis, unde laboriosam quasi eius qui asperiores aliquam quaerat nihil modi numquam voluptatum voluptas dignissimos sunt hic?</p>
                 </div>
