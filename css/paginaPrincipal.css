@@ -66,27 +66,36 @@ html {
 
 }
 
-.buttonNavbarLeft {
+.buttonNavbarRight {
     color: white;
     font-size: 2rem;
+    transition: 1s;
 }
+
+.buttonNavbarRight:hover{
+    color: rgb(125, 0, 27);
+}
+
 
 form {
     width: 30%;
 }
 
-form .inputSearchNavbar {
-    height: 40px;
-    margin-top: 2%;
-    background-color: rgb(36, 36, 36);
-
-}
-
 .inputSearchNavbar {
-    background-color: black;
+    background-color: rgb(36, 36, 36);
     border-color: white;
     border-radius: 2cm;
+    transition: 1s;
+    color: black;
+    height: 40px;
+    margin-top: 2%;
 }
+
+.inputSearchNavbar:hover{
+    background-color: rgb(161, 160, 160);
+    
+}
+
 
 .formNavbar {
     margin-right: 5%;
