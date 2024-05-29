@@ -102,11 +102,10 @@ form {
 }
 
 body {
-    background-color: green;
     background-image: url("../img/background_paginaPrincip.png");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: repeat;
     position: relative;
     box-sizing: inherit;
     padding-bottom: 3em;
@@ -132,17 +131,24 @@ body {
 }
 
 .main_section .card {
-    width: 230px;
-    height: 300px;
+    width: 10%;
+    height: 15%;
+    
     border-radius: 15px;
     background: #494949d4;
     /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
     /* flex: 1 1 200px; */
-    flex: 0 0 15%;
-    margin-bottom: 2%;
+    flex: 0 0 25%;
+    /* margin-bottom: 2%; */
+    margin: 2%;
     padding: 2%;
     
 
+}
+
+.card img{
+    width: auto;
+    height: 5%;
 }
 
 
@@ -156,6 +162,7 @@ footer {
     background: black;
     position: absolute;
     padding: 1em 0;
+    bottom: -150%;
 }
 
 footer img {
