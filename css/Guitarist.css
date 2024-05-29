@@ -10,48 +10,6 @@ html {
     height: 100%;
 }
 
-/*
-.navbar{ .navbarContainer{
-    display: flex;
-    background-color: black;
-    padding: 1%;
-}
-
-.navbarImageContainer{
-    width: 10%;
-}
-
-.navbarContainer li a{
-    color: white;
-    text-decoration: none;
-    padding: 0 5px;
-}
-
-
-.navbarImageContainer img{
-    height: auto;
-    width: 100%;
-}
-
-
-.searchBarContainer{
-    display: flex;
-    align-items: center;
-}
-
-.inputSearchNavbar{
-    background-color: black;
-}
-
-.logosContainer{
-    display: flex;
-    align-items: center;
-    font-size: 2rem;
-    color: white;
-}
- */
-
-
 .navbarBootstrap{
     background-color: black;
     padding: 4% 0;
@@ -107,79 +65,65 @@ form .inputSearchNavbar{
     margin-right: 5%;
 }
 
+/*            Body    */
+
 body{
-   background-color: green; 
-   background-image: url("../img/background_paginaPrincip.png");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   position: relative;
-   box-sizing: inherit;
-   padding-bottom: 3em;
-   min-height: 100vh;
-}
-
-.main_section{
-    height: 90vh;
-}
-
-.main_img {
-    position: absolute;
-    z-index: 3;
-    width: auto;
-    height: 90vh;
-    margin-left: -260px; 
-    float: inline-start;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-
-}
-
-.guitarras {
-    overflow: hidden;
-    padding: 30px 0  15vh;
-    white-space: nowrap;
+    background-color: black; 
     position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 
-.slider {
-    display: inline-block;
-    display: flex;
-    justify-content: space-between;
-    animation: 40s slide infinite linear;
-    
+.main_section {
+    height: min-content;
 }
 
-.slider img {
-    height: 32vh;
-    width: 23vw;
-    margin: 0 8%;
-}
-
-.cont_p {
-    display: flex;
+.title {
     justify-content: center;
     align-items: center;
-    width: 60%;
-    height: fit-content;
-    margin: 0 auto;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
+    font-size: 9.8vh;
+    padding-bottom: 3%;
 }
 
-section p {
+h1 {
+    text-align: center;
+    font-size: 8.8vh;
+    color: white;
+}
+
+.guitarrist {
+    padding: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.guitarrist p {
     color: white;
     text-align: justify;
     letter-spacing: 1.8px;
     line-height: 2.8vh;
     vertical-align: middle;
-    font-size: 1.8vh;
+    font-size: 2.8vh;
+    width: 80%;
+    padding: 3%;
+    margin: 0 auto;
 }
+
+.guitarrist img {
+    width: 89vw;
+    height:78vh;
+    padding: 4%;
+    border-radius: 3.6%;
+}
+
+
+/* FOOTER*/
 
 footer{
     width: 45w;
@@ -251,44 +195,6 @@ footer .footerImageContainer{
 }
 
 @media (max-width: 768px) {
-    .cont_p {
-        width: 90%;
-        margin-top: 8vh;
-    }
-
-    .slider img {
-        height: 30vh;
-        width: 33vw;
-    }
-
-    .guitarras {
-        padding-bottom: 15%;
-    }
-
-    body {
-        background-image: url(../img/background_mobile.png);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
-    section p {
-        letter-spacing: 1px;
-        line-height: 2.3vh;
-        font-size: 1.2vh;
-    }
-
-    .main_img {
-        height: 42%;
-        width: 63%;
-        margin-left: -125px; 
-    }
-
-    .main_section{
-        height: 85vh;
-    }
-    
     footer {
         height: 12vh;
     }
@@ -327,7 +233,6 @@ footer .footerImageContainer{
 
   }
 
-
 .contenedorLogoNavbar{
     background-color: black;
     border-radius: 50%;
@@ -342,7 +247,6 @@ footer .footerImageContainer{
 
 .navbarContainer2{
    background-color: black;
-
 }
 
 .contenedorLogoNavbar img{
