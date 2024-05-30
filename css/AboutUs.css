@@ -107,12 +107,9 @@ form {
 body{
     background-color: black; 
     position: relative;
-    padding-bottom: 3em;
-    min-height: 100vh;
-}
+    padding-bottom: 3em; 
+    min-height: 100%;
 
-.main_section {
-    height: min-content;
 }
 
 .title {
@@ -157,7 +154,8 @@ h1 {
     padding: 1rem;
 }
 
-.card_img1 {
+.card_img1,
+.card_img2 {
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -165,7 +163,8 @@ h1 {
     width: 80%;
 }
 
-.card_img1 img {
+.card_img1 img,
+.card_img2 img {
     width: 33vw;
     height:78vh;
     padding-top: 13%;
@@ -183,21 +182,24 @@ h1 {
     margin-left: -7%;
 }
 
-.details_art1_left {
+.details_art1_left,
+.details_art2_right {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     text-align: center;
 }
 
-.details_art1_left h3 {
+.details_art1_left h3,
+.details_art2_right h3 {
     text-align: center;
     font-size: 3.4vw;
     color: white;
     padding-bottom: 6%;
 }
 
-.details_art1_left p {
+.details_art1_left p,
+.details_art2_right p {
     font-size: 1.2vw;
     text-align: justify;
     color: white;
@@ -209,69 +211,23 @@ h1 {
     height:32vh;
 }
 
-.details_art1_right {
+.details_art1_right,
+.details_art2_left  {
     align-items: left;
     justify-content: left; 
     width: min-content;
 }
 
-.details_art1_right img{
-    width: 12vw !important;
-    height:85vh;
-    padding-top: 8%;
-}
-
-.details_art2_left {
-    align-items: left;
-    justify-content: left; 
-    width: min-content;
-}
-
+.details_art1_right img,
 .details_art2_left img{
     width: 12vw !important;
     height:85vh;
     padding-top: 8%;
 }
 
-.details_art2_right {
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.details_art2_right h3 {
-    text-align: center;
-    font-size: 3.4vw;
-    color: white;
-    padding-bottom: 6%;
-}
-
-.details_art2_right p {
-    font-size: 1.2vw;
-    text-align: justify;
-    color: white;
-    padding-bottom: 6%;
-}
-
 .details_art2_right img{
     width: 26vw !important;
     height:38vh;
-}
-
-.card_img2 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    width: 80%;
-    /*padding-left: 35%;*/
-}
-
-.card_img2 img {
-    width: 33vw;
-    height:78vh;
-    padding-top: 13%;
 }
 
 .container_guitarblue {
@@ -283,13 +239,15 @@ h1 {
     flex-direction: row;
 }
 
-.fst_column {
+.fst_column,
+.trd_column {
     align-items: center;
     justify-content: center; 
     width: min-content;
 }
 
-.fst_column p {
+.fst_column p,
+.trd_column p {
     font-size: 1.4vw;
     text-align: left;
     color: white;
@@ -325,20 +283,6 @@ h1 {
    margin-top: 13%;
 }
 
-.trd_column {
-    align-items: center;
-    justify-content: center; 
-    width: min-content;
-}
-
-.trd_column p {
-    font-size: 1.4vw;
-    text-align: left;
-    color: white;
-    padding-top: 16%;
-    padding-bottom: 3%;
-}
-
 .bag {
     width: 15vw;
     height: 29vw;
@@ -355,7 +299,7 @@ h1 {
 
 .last_img {
     background-color: black;
-    padding: 2em;
+    padding: 1em;
     justify-content: center;
     align-items: space-around;
     display: flex;
@@ -364,7 +308,10 @@ h1 {
 .guitarr_min {
     width: 18vw;
     height: 40vw;
-    padding-top: 10%;
+}
+
+.guitarr_max {
+    height: 40vw;
 }
 
 /* FOOTER*/
@@ -378,7 +325,7 @@ footer{
     align-items: space-around;
     background: black;
     position: absolute;
-    padding: 1em 0;
+    padding: 1em 0; 
 }
 
 footer img{
@@ -439,8 +386,127 @@ footer .footerImageContainer{
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 5.8vh;
+    }
+
+    .grid_articulo {
+        display: grid;
+        grid-template-columns: 60vw;
+        padding: 1rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_img1,
+    .card_img2 {
+        width: fit-content;
+        border-color: blue;
+        
+    }
+
+    .card_img1 img,
+    .card_img2 img {
+        width: 60vw;
+        height:60vw;
+        padding-top: 0%;
+        padding-left: 0%;
+        border-color: blue;
+        border-radius: 12%;
+    }
+
+    .card {
+        width: 90vw;
+        margin-left: -20%;
+    }
+
+    .details_art1_left {
+        margin-right: 15%;
+    }
+
+    .details_art1_left h3,
+    .details_art1_right h3 {
+        font-size: 5.4vw;
+        padding-bottom: 4%;
+    }
+
+    .details_art1_left p,
+    .details_art2_right P {
+        font-size: 1.8vw;
+    }
+    
+    .details_art1_left img{
+        width: 26vw !important;
+        height:12vh;
+    }
+
+    .details_art1_right img,
+    .details_art2_left img{
+        width: 20vw !important;
+        height:37vh;
+        padding-top: 8%;
+    }
+
+    .details_art2_right img{
+        width: 30vw !important;
+        height:12vh;
+    }
+    
+    .container_guitarblue {
+        padding-left: 9%;
+    }
+
+    .fst_column p,
+    .trd_column p{
+        font-size: 1.8vw;
+        padding-bottom: 0%;
+    }
+
+    .hammer {
+        width: 25vw !important;
+        height: 20vw;
+        padding-top: 2%;
+        margin-left: 12%;
+       
+    }
+
+    .glass {
+        width: 35vw !important;
+        height:18vh;
+        margin-left: 0%;
+    }
+
+    .snd_column img {
+        height: 120vw;
+    }
+
+    .trd_column {
+        width: 20vw;
+    }
+
+    .trd_column p {
+        padding-left: 12%;
+    }
+
+    .bag {
+        width: 18vw;
+        height: 32vw;
+    }
+
+    .guitarr_max {
+        width: 90vw;
+        height: 80vw;
+        padding-top: 10%;
+    }
+
+    .guitarr_min {
+        width: 0;
+        height: 0;
+    }
+
     footer {
-        height: 12vh;
+        height: 18vh;
     }
 
     .footerInfoContainer {
@@ -482,19 +548,19 @@ footer .footerImageContainer{
         padding: 0;
         color: white;
         background-color: rgb(125, 0, 27);
-    }
+    } 
 
     .contenedorLinksNavbar {
         background-color: rgb(27, 27, 27);
         position: absolute;
-        z-index: 5;
+        z-index: 1;
         width: 100vw;
         height: 50vh;
-    }
+    } 
 
-    .formNavbar input, i{
+    /* .formNavbar input, i{
         display: none;
-    }
+    }  */
 
     .menuHamburguesaButton{
         transition: 1s;
@@ -507,7 +573,6 @@ footer .footerImageContainer{
         /* border: ; */
 
     }
-
 
 }
 
@@ -536,5 +601,5 @@ footer .footerImageContainer{
 .contenedorLogoNavbar img{
     width: 100%;
     height: auto;
-}
+} 
 
