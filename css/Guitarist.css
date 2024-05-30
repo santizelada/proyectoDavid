@@ -127,26 +127,105 @@ body{
 }
 
 h1 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     text-align: center;
     font-size: 8.8vh;
+    font-weight: 500;
     color: white;
-    transition: color 1s;
+    cursor: default;
+    position: relative;
+    border: none;
+    text-transform: uppercase;
+    /*transition: color 1s;*/
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
-.slash_h1:hover {
+h1:hover:after,
+h1:focus:after {
+    width: 100%;
+    left: 0%;
+}
+
+.slash_h1:hover,
+.slash_h1:focus {
     color : rgb(238, 198, 105)
 }
 
-.angus_h1:hover {
+.slash_h1:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(238, 198, 105);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.angus_h1:hover,
+.angus_h1:focus {
     color : rgb(101, 49, 43)
 }
 
-.eric_h1:hover {
+.angus_h1:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(101, 49, 43);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.eric_h1:hover,
+.eric_h1:focus {
     color : rgb(169, 112, 37)
 }
 
-.bb_h1:hover {
+.eric_h1:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(169, 112, 37);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.bb_h1:hover,
+.bb_h1:focus {
     color : rgb(68, 62, 54)
+}
+
+.bb_h1:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(68, 62, 54);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 

@@ -132,35 +132,42 @@ body{
     float: inline-start;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-
-}
-
 .guitarras {
     overflow: hidden;
     padding: 30px 0  15vh;
+    width: 200vw;
     white-space: nowrap;
     position: relative;
 }
 
 .slider {
-    display: inline-block;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: slide 5s linear infinite;
     justify-content: space-between;
+    /*
+    display: flex;
     animation: 40s slide infinite linear;
-    
+    */
 }
 
 .slider img {
-    height: 32vh;
+    height: 52vh;
     width: 23vw;
     margin: 0 8%;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /*transform: translateX(-100%);*/
+        translate: calc(-4 * 250px);
+    }
 }
 
 .cont_p {
