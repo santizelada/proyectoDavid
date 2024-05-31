@@ -24,9 +24,9 @@ html {
     margin: 0;
     height: 10vh;
 
-    /* background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    /* background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
@@ -93,7 +93,7 @@ form {
 
 .inputSearchNavbar:hover{
     background-color: rgb(161, 160, 160);
-    
+
 }
 
 
@@ -104,10 +104,17 @@ form {
 /*            Body    */
 
 body{
-    background-color: black; 
-    position: relative;
+    background-color: black;
+    /* position: relative;
     padding-bottom: 3em;
-    min-height: 100%;
+    */
+    display: flex;
+    flex-direction: column;
+    min-height: 150%;
+    background-image: url(../img/sg_fondo.png);
+    background-size:48%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title {
@@ -122,8 +129,116 @@ body{
     padding-bottom: 3%;
 }
 
+/* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+}  */
 
+  /* form animation starts */
+.form {
+    background: rgb(109, 107, 107);
+    zoom: 1;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    box-shadow: 0 20px 20px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 12px;
+    width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    animation: bounce 1.5s infinite;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+::-webkit-input-placeholder {
+    font-size: 1.3em;
+    color: white;
+}
 
+.name {
+    background-color: #ebebeb; 
+}
+.name:hover {
+    border-bottom: 5px solid #1f201f;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.email {
+    /* background-color: #ebebeb; */
+    height: 3em;
+}
+
+.email:hover {
+    border-bottom: 5px solid #1f201f;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.message {
+    background-color: #ebebeb; 
+    overflow: hidden;
+    height: 10rem;
+}
+
+.message:hover {
+    border-bottom: 5px solid #1f201f;
+    height: 12em;
+    width: 380px;
+    transition: ease 0.5s;
+}
+
+.formEntry {
+    display: block;
+    margin: 30px auto;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    border: 1px solid white;;
+    background-color: transparent;
+    color: white;
+}
+
+.submit {
+    width: 200px;
+    color: white;
+    background-color: #1f201f;
+    font-size: 20px;
+    border: 0;
+}
+
+.submit:hover {
+    box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+    transform: translateY(-3px);
+    width: 350px;
+    border: 5px solid #55524f;
+
+}
+
+@keyframes bounce {
+    0% {
+      tranform: translate(0, 4px);
+    }
+    50% {
+      transform: translate(0, 5px);
+    }
+}
 
 /* FOOTER*/
 
@@ -135,8 +250,9 @@ footer{
     justify-content: center;
     align-items: space-around;
     background: black;
-    position: absolute;
-    padding: 1em 0;
+    /* position: absolute;
+    padding: 1em 0; */
+    margin-top: auto;
 }
 
 footer img{
@@ -162,7 +278,7 @@ footer .footerImageContainer{
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;    
+    font-size: 2rem;
     position: relative;
 }
 
@@ -183,7 +299,7 @@ footer .footerImageContainer{
 }
 
 .containerLogos i {
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 
@@ -193,7 +309,7 @@ footer .footerImageContainer{
 }
 
 .footerMail i {
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 @media (max-width: 768px) {
@@ -203,23 +319,27 @@ footer .footerImageContainer{
         margin-top: 5%;
     }
 
-    .guitarrist img {
-        width: 90vw;
-        height:45vh;
-        padding: 4%;
-        border-radius: 20%;
+    body {
+        min-height: 114%;
+        background-size:120%;
     }
 
-    .guitarrist p {
-        letter-spacing: 0.4px;
-        line-height: 5vw;
-        font-size: 2vh;
-        width: 80%;
-        padding: 3%;
-        margin: 0 auto;
-        text-align: center;
+    .form {
+        width: 89vw;
     }
 
+    .name:hover {
+        width: 330px;
+    }
+
+    .email:hover {
+        width: 330px;
+    }
+
+    .message:hover {
+        width: 330px;
+    }
+    
     footer {
         height: 24vh;
     }
