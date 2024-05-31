@@ -102,15 +102,19 @@ form {
 }
 
 body {
-    background-image: url("../img/background_paginaPrincip.png");
+    /* background-image: url("../img/Slash-Main_0.jpg");
     background-size: cover;
     background-position: center center;
-    background-repeat: repeat;
+    background-repeat: repeat; */
+    background-color: black;
+
     position: relative;
     box-sizing: inherit;
     padding-bottom: 3em;
     min-height: 100vh;
+
 }
+
 
 
 
@@ -119,37 +123,140 @@ body {
     height: 80vh;
 }
 
-.cardsContainer{
+.main_section .titleContainer {
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Slash-Main_0.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.main_section .titleContainer:hover {
+    height: 40vw;
+
+}
+
+.titleContainer h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+    font-weight: 200;
+    transition: 1s;
+}
+
+.titleContainer h1:hover {
+    transform: scale(200%);
+}
+
+
+.cardsContainer {
+    height: 80vw;
     padding-top: 5%;
     padding-left: 5%;
-    padding-right:5% ;
+    padding-right: 5%;
     display: flex;
     width: 100vw;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    background: rgb(41, 34, 2);
+    background: linear-gradient(0deg, rgb(20, 17, 1) 27%, rgb(69, 57, 2) 100%);
 }
+
 
 .main_section .card {
     width: 10%;
-    height: 15%;
-    
+    height: fit-content;
     border-radius: 15px;
     background: #494949d4;
     /* box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60); */
     /* flex: 1 1 200px; */
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     /* margin-bottom: 2%; */
     margin: 2%;
     padding: 2%;
-    
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
 }
 
-.card img{
+.card:hover {
+    transform: scale(110%);
+}
+
+.card .guitarImgContainer {
     width: auto;
-    height: 5%;
 }
+
+.card .logoGibsonCard {
+    display: flex;
+    justify-content: left;
+}
+
+.logoGibsonImgCard {
+    width: 25%;
+    height: auto;
+}
+
+.card .guitarImgContainer {
+    width: 50%;
+    height: auto;
+}
+
+.productDescription {
+    padding-top: 5%;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.productPrice {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+button {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-transform: uppercase;
+    /* box-shadow: 6px 6px 12px #c5c5c5,
+        -6px -6px 12px #ffffff; */
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #d8a60f 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 9em;
+}
+
+
+
 
 
 footer {
@@ -162,7 +269,7 @@ footer {
     background: black;
     position: absolute;
     padding: 1em 0;
-    bottom: -150%;
+    bottom: -120%;
 }
 
 footer img {
