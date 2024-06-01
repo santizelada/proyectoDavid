@@ -117,16 +117,15 @@ body{
     background-repeat: no-repeat;
 }
 
-.title {
+.title h1 {
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    letter-spacing: 1.8px;
-    line-height: 2.8vh;
-    vertical-align: middle;
-    font-size: 9.8vh;
+    font-size: 5.8vh;
     padding-bottom: 3%;
+    font-weight: bold;
+    margin: 2%;
 }
 
 /* .card-item__bg{

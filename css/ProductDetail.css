@@ -96,7 +96,6 @@ form {
     
 }
 
-
 .formNavbar {
     margin-right: 5%;
 }
@@ -126,12 +125,13 @@ body {
 .product-page {
     display: flex;
     width: 93%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     /* background-color: #111;
     border: 1px solid #444;
     border-radius: 10px; */
     overflow: hidden;
     margin: 0 auto;
+    flex-direction: row;
 }
 
 .product-image-section {
@@ -153,19 +153,20 @@ body {
     justify-content: space-around;
     margin-top: 10px;
     flex-direction: column;
-    width: 15vw;
+    width: 13vw;
     align-items: center;
     height: fit-content;
 }
 
 .thumbnail-images img {
-    width: 145%;
-    height: 70%;
-    max-width: 60px;
+    width: 7.2vw;
+    height: 5.9vw;
+    /* max-width: 60px; */
     cursor: pointer;
     background-color: rgb(38, 37, 37);
     border-radius: 15px;
     margin: 2%;
+    
 }
 
 .main_img {
@@ -175,12 +176,13 @@ body {
     height: 65vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .main-image {
-    width: 40%;
-    height: 90%;
-    margin-top: 5%;
+    width: 29vw;
+    height: 15vw;
+    margin-top: 22%;
 }
 
 .product-details-section {
@@ -373,21 +375,76 @@ footer .footerImageContainer{
         margin-top: 5%;
     }
 
-    .guitarrist img {
-        width: 90vw;
-        height:45vh;
-        padding: 4%;
-        border-radius: 20%;
+    .title {
+        font-size: 5.8vh;
+        margin: 4%;
     }
 
-    .guitarrist p {
-        letter-spacing: 0.4px;
-        line-height: 5vw;
-        font-size: 2vh;
-        width: 80%;
-        padding: 3%;
-        margin: 0 auto;
+    .product-page {
+        flex-direction: column;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-images {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnail-images {
+        flex-direction: row;
+        align-self:center;
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .thumbnail-images img {
+        width: 15vw;
+        height: 20vw;
+        margin: 1.5%;
+        border-radius: 15px;
+    }
+
+    .main_img {
+        width: 90vw;
+        height: 50vw;
+    }
+
+    .main-image {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 8%;
+    }
+
+    .product-description {
+        width: 0vw;
+        height: 0vw;
+    }
+
+    .product-description h4 {
+        font-size: 0;
+    }
+    
+    .product-description p {
+        font-size: 0;
+    }
+
+    .product-details-section {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .product-price button {
+        width: 43vw;
+    }
+
+    button:hover {
+        width: 50vw;
+        height: 20.5vw;
+        margin-left: 2%;
     }
 
     footer {

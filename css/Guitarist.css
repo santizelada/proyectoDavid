@@ -110,13 +110,11 @@ body{
     min-height: 100%;
 }
 
-.title {
+.title h1{
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-    letter-spacing: 1.8px;
-    line-height: 2.8vh;
     vertical-align: middle;
     font-size: 9.8vh;
     padding-bottom: 3%;
@@ -249,6 +247,18 @@ h1:focus:after {
     height:78vh;
     padding: 4%;
     border-radius: 20%;
+    transition: 1s;
+}
+
+.guitarrist img:hover {
+    width: 92vw;
+    height:89vh;
+    border-radius: 20%;
+}
+
+video {
+    width: 80vw;
+    border-radius: 9%;
 }
 
 
@@ -332,7 +342,7 @@ footer .footerImageContainer{
 
     .guitarrist img {
         width: 90vw;
-        height:45vh;
+        height:25vh;
         padding: 4%;
         border-radius: 20%;
     }
