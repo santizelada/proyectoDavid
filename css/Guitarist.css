@@ -253,7 +253,7 @@ h1:focus:after {
 .guitarrist img:hover {
     width: 92vw;
     height:89vh;
-    border-radius: 20%;
+    border-radius: 20%; 
 }
 
 video {

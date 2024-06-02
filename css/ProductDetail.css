@@ -155,7 +155,7 @@ body {
     flex-direction: column;
     width: 13vw;
     align-items: center;
-    height: fit-content;
+    height: fit-content; 
 }
 
 .thumbnail-images img {
