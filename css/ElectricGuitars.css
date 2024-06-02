@@ -121,6 +121,7 @@ body {
 .main_section {
     width: 100vw;
     height: 80vh;
+    
 }
 
 .main_section .titleContainer {
@@ -270,6 +271,7 @@ footer {
     position: absolute;
     padding: 1em 0;
     bottom: -120%;
+    border: red 5px solid;
 }
 
 footer img {
@@ -331,6 +333,43 @@ footer .footerImageContainer {
     font-size: 1.5vw;
 }
 
+/* PANTALLAS GRANDES ----------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 1200px) {
+
+    footer {
+        width: 45w;
+        height: 25vh;
+        bottom: -50%;
+        border: red 5px solid;
+    }
+    
+    .cardsContainer{
+        background: transparent;
+        
+    }
+
+    .main_section .card {
+        width: 10%;
+        height: fit-content;
+        border-radius: 15px;
+        background: #494949d4;
+        flex: 0 0 25%;
+        margin: 2%;
+        padding: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+
+    body{
+    background: linear-gradient(0deg, rgb(20, 17, 1) 27%, rgb(69, 57, 2) 100%);
+    height: 100vh;
+    }
+}
+
 /* PANTALLAS MEDIANAS ----------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 991px) {
@@ -348,10 +387,10 @@ footer .footerImageContainer {
         height: 50vh;
     }
 
-    .formNavbar input,
+    /* .formNavbar input,
     i {
         display: none;
-    }
+    } */
 
     .menuHamburguesaButton {
         transition: 1s;
