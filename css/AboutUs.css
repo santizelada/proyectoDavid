@@ -154,6 +154,7 @@ h1 {
 .landscape_guitar img:hover  {
     height: 63%;
     width: 83%;
+    filter : drop-shadow(5px 5px 2px rgb(89, 76, 42));
 }
 
 .grid_articulo {
@@ -186,6 +187,7 @@ h1 {
 .card_img2 img:hover {
     width: 38vw;
     height:88vh;
+    filter : drop-shadow(2px 5px 5px rgb(107, 107, 105));
 }
 
 .card {
@@ -424,11 +426,13 @@ h1 {
 
 .guitarr_min:hover {
     width: 18vw;
-    height: 28vw
+    height: 28vw;
+    filter : drop-shadow(2px 5px 2px rgb(36, 36, 36));
 }
 
 .guitarr_max:hover {
     height: 35vw;
+    filter : drop-shadow(2px 5px 2px rgb(36, 36, 36));
 }
 
 /* FOOTER*/
@@ -599,7 +603,7 @@ footer .footerImageContainer{
     }
 
     .snd_column img {
-        height: 120vw;
+        height: 110vw;
     }
 
     .trd_column {
