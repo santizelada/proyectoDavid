@@ -126,9 +126,9 @@ body{
 .main_img {
     position: absolute;
     z-index: 3;
-    width: auto;
+    width: 18%;
     height: 90vh;
-    margin-left: -260px; 
+    align-self: flex-start;
     float: inline-start;
 }
 
@@ -247,6 +247,17 @@ footer .footerImageContainer{
     font-size: 1.5vw; 
 }
 
+.containerLogos a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.5vw; 
+}
+
+.containerLogos a:hover {
+    color: #626161;
+}
+
 
 .footerMail{
     color: white;
@@ -288,8 +299,7 @@ footer .footerImageContainer{
 
     .main_img {
         height: 42%;
-        width: 63%;
-        margin-left: -125px; 
+        width: 40%;  
     }
 
     .main_section{

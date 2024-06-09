@@ -408,15 +408,16 @@ h1 {
     background-color: black;
     padding: 1em;
     justify-content: center;
-    align-items: space-around;
+    align-items: center;
     display: flex;
+    text-align: center;
 }
 
 .guitarr_min {
-    width: 15vw;
     height: 25vw;
     margin-top: 5%;
     transition: 0.8s;
+
 }
 
 .guitarr_max {
@@ -425,7 +426,6 @@ h1 {
 }
 
 .guitarr_min:hover {
-    width: 18vw;
     height: 28vw;
     filter : drop-shadow(2px 5px 2px rgb(36, 36, 36));
 }

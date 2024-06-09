@@ -170,16 +170,18 @@ body{
 
 .name {
     background-color: #ebebeb; 
+    transition: 0.9s;
 }
 .name:hover {
     border-bottom: 5px solid #1f201f;
     width: 380px;
-    transition: ease 0.5s;
+    transition: ease 0.9s;
 }
 
 .email {
     /* background-color: #ebebeb; */
     height: 3em;
+    transition: 0.9s;
 }
 
 .email:hover {
@@ -192,6 +194,7 @@ body{
     background-color: #ebebeb; 
     overflow: hidden;
     height: 10rem;
+    transition: 0.9s;
 }
 
 .message:hover {
@@ -220,6 +223,7 @@ body{
     background-color: #1f201f;
     font-size: 20px;
     border: 0;
+    transition: 0.9s;
 }
 
 .submit:hover {
@@ -301,6 +305,16 @@ footer .footerImageContainer{
     font-size: 1.5vw;
 }
 
+.containerLogos a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.5vw; 
+}
+
+.containerLogos a:hover {
+    color: #626161;
+}
 
 .footerMail{
     color: white;

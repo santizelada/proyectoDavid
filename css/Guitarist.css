@@ -110,7 +110,7 @@ body{
     min-height: 100%;
 }
 
-.title h1{
+/* .title h1{
     justify-content: center;
     align-items: center;
     color: white;
@@ -118,6 +118,28 @@ body{
     vertical-align: middle;
     font-size: 9.8vh;
     padding-bottom: 3%;
+    margin: 6%;
+} */
+
+.title {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    letter-spacing: 1.8px;
+    line-height: 2.8vh;
+    vertical-align: middle;
+    font-size: 9.8vh;
+    padding-bottom: 3%;
+    margin: 4%;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 8.8vh;
+    color: white;
+    font-weight: bold; 
+
 }
 
 h1 {
@@ -323,6 +345,17 @@ footer .footerImageContainer{
     font-size: 1.5vw; 
 }
 
+.containerLogos a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.5vw; 
+}
+
+.containerLogos a:hover {
+    color: #626161;
+}
+
 
 .footerMail{
     color: white;
@@ -334,6 +367,10 @@ footer .footerImageContainer{
 }
 
 @media (max-width: 768px) {
+    .title h1 {
+        font-size: 4.8vh;
+    }
+    
     h1 {
         font-size: 4.8vh;
         font-weight: 500;

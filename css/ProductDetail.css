@@ -24,9 +24,9 @@ html {
     margin: 0;
     height: 10vh;
 
-    /* background-color: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    /* background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 
@@ -93,7 +93,7 @@ form {
 
 .inputSearchNavbar:hover{
     background-color: rgb(161, 160, 160);
-    
+
 }
 
 .formNavbar {
@@ -103,7 +103,7 @@ form {
 /*            Body    */
 
 body {
-    background-color: black; 
+    background-color: black;
     position: relative;
     padding-bottom: 3em;
     min-height: 100%;
@@ -136,7 +136,7 @@ body {
 
 .product-image-section {
     width: 100%;
-    padding: 20px; 
+    padding: 20px;
     padding-left: 4%;
     justify-content: center;
     align-items: center;
@@ -155,34 +155,46 @@ body {
     flex-direction: column;
     width: 13vw;
     align-items: center;
-    height: fit-content; 
+    height: fit-content;
 }
 
 .thumbnail-images img {
     width: 6.2vw;
-    height: 5.3vw; 
+    height: 5.3vw;
     cursor: pointer;
     background-color: rgb(38, 37, 37);
     border-radius: 15px;
     margin: 2%;
-    
+
 }
+
+/* .fst_guit {
+    width: 20%;
+} */
 
 .main_img {
     background-color: rgb(38, 37, 37);
     border-radius: 15px;
-    width: 40vw;
-    height: 65vh;
+    width: 37vw;
+    height: 30vw; 
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* width: min-content; */
+    align-self: center;
+    justify-self: center;
 }
 
 .main-image {
-    width: 29vw;
-    height: 15vw;
-    margin-top: 22%;
+    width: 30vw;
+    /* height: 18vw;  */
+    /* margin-top: 15%; */
 }
+
+.acustic_guitar {
+    width: 39vw;
+}
+
 
 .product-details-section {
     width: 50%;
@@ -218,7 +230,7 @@ h2 {
 .option input, .option select {
     width: 100%;
     padding: 5px;
-    border: 1px solid #444; 
+    border: 1px solid #444;
     background-color: black;
     color: #fff;
     border-radius: 15px;
@@ -247,7 +259,7 @@ h2 {
     margin-left: 3%;
     font-size: 3.2vh;
     font-weight: bold;
-    transition: 0.5s;
+    transition: 0.9s;
 }
 
 button:hover {
@@ -289,6 +301,7 @@ iframe {
     width: 75vw;
     height: 40vw;
     border-radius: 5%;
+    transition: 0.9s;
 }
 
 iframe:hover {
@@ -333,7 +346,7 @@ footer .footerImageContainer{
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    font-size: 2rem;    
+    font-size: 2rem;
     position: relative;
 }
 
@@ -354,9 +367,19 @@ footer .footerImageContainer{
 }
 
 .containerLogos i {
+    font-size: 1.5vw;
+}
+
+.containerLogos a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
     font-size: 1.5vw; 
 }
 
+.containerLogos a:hover {
+    color: #626161;
+}
 
 .footerMail{
     color: white;
@@ -364,7 +387,7 @@ footer .footerImageContainer{
 }
 
 .footerMail i {
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 @media (max-width: 768px) {
@@ -402,20 +425,33 @@ footer .footerImageContainer{
 
     .thumbnail-images img {
         width: 15vw;
-        height: 20vw;
+        height: 15vw;
         margin: 1.5%;
         border-radius: 15px;
     }
 
     .main_img {
         width: 90vw;
-        height: 50vw;
+        height: 60vw;
+        align-items: center;
     }
 
     .main-image {
-        width: 80vw;
-        height: 40vw;
-        margin-top: 8%;
+        width: 60vw;
+        /* padding-bottom: 30%; */
+    }
+
+    .acustic_guitar {
+        width: 90vw;
+    }
+
+    .option input, .option select {
+        width: 90%;
+        padding: 5px;
+        border: 1px solid #444;
+        background-color: black;
+        color: #fff;
+        border-radius: 15px;
     }
 
     .product-description {
@@ -426,7 +462,7 @@ footer .footerImageContainer{
     .product-description h4 {
         font-size: 0;
     }
-    
+
     .product-description p {
         font-size: 0;
     }
