@@ -337,8 +337,7 @@ footer .footerImageContainer {
     footer {
         width: 45w;
         height: 25vh;
-        bottom: -50%;
-        border: red 5px solid;
+        bottom: -20%;
     }
     
     .cardsContainer{
@@ -361,7 +360,7 @@ footer .footerImageContainer {
     }
 
     body{
-    background: linear-gradient(0deg, rgb(20, 17, 1) 27%, rgb(69, 57, 2) 100%);
+    /* background: linear-gradient(0deg, rgb(20, 17, 1) 27%, rgb(69, 57, 2) 100%); */
     height: 100vh;
     }
 }
@@ -424,6 +423,8 @@ footer .footerImageContainer {
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        background: linear-gradient(0deg, rgb(59, 20, 1) 27%, rgb(116, 38, 1) 100%);
+        
     }
 
     section p {
@@ -440,6 +441,15 @@ footer .footerImageContainer {
 
     .main_section {
         height: 85vh;
+    }
+
+    .cardsContainer{
+        flex-direction: column;
+    }
+
+    .cardsContainer .card{
+        height: fit-content;
+        width:10vw;
     }
 
     footer {
