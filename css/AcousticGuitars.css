@@ -125,9 +125,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/Slash-Main_0.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/acoustic-guitars-background.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center 60%;
     background-repeat: no-repeat;
     transition: 1s;
 }
@@ -151,17 +151,17 @@ body {
 
 
 .cardsContainer {
-    height: 80vw;
-    padding-top: 5%;
+    height: fit-content;
+    /* padding-top: %;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 5%; */
     display: flex;
     width: 100vw;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     background: rgb(41, 34, 2);
-    background: linear-gradient(0deg, rgb(20, 17, 1) 27%, rgb(69, 57, 2) 100%);
+    background: linear-gradient(0deg, rgb(59, 20, 1) 27%, rgb(116, 38, 1) 100%);
 }
 
 
@@ -174,7 +174,8 @@ body {
     /* flex: 1 1 200px; */
     flex: 0 0 20%;
     /* margin-bottom: 2%; */
-    margin: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     padding: 2%;
     display: flex;
     align-items: center;
@@ -266,8 +267,7 @@ footer {
     background: black;
     position: absolute;
     padding: 1em 0;
-    bottom: -120%;
-    border: red 5px solid;
+    bottom: -35%;
 }
 
 footer img {
