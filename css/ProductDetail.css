@@ -127,7 +127,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/acoustic-guitars-background.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/backgound_buy.jpg");
     background-size: cover;
     background-position: center 60%;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ body {
 
 .product-page {
     display: flex;
-    width: 93%;
+    width: 100%;
     /* max-width: 1200px; */
     /* background-color: #111;
     border: 1px solid #444;
@@ -161,6 +161,8 @@ body {
     overflow: hidden;
     margin: 0 auto;
     flex-direction: row;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 75%, rgb(14, 14, 14) 100%);
 }
 
 .product-image-section {
@@ -202,7 +204,7 @@ body {
 } */
 
 .main_img {
-    background-color: rgb(38, 37, 37);
+    background-color: rgba(55, 55, 55, 0.4); 
     border-radius: 15px;
     width: 37vw;
     height: 30vw; 
